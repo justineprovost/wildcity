@@ -58,19 +58,7 @@ section {
 
 /*Map Start*/
 
-#start {
-	height: 100%;
-	background:#ADD8E6;
-	posiition:relative;
-}
 
-.st0{
-	fill:#A0A0A0;
-}	
-
-.st2{
-	fill:#D9E021;
-}
 
 
 /***************************************************Quiz styles**************************************************************/
@@ -158,21 +146,12 @@ input[type="radio"]:checked + label {
 
 
 /****************************************************SVG line drawing test**************************************************/
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 1s linear alternate infinite;
-}
 
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
+#start {
+					height: 100%;
+					background:#ADD8E6;
+					posiition:relative;
+				}
 
 /********************************************************Overlay menu******************************************************/
 

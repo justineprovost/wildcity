@@ -1,174 +1,170 @@
 @charset "UTF-8";
 /* CSS Document */
-
 /*MY STYLES*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Neucha');
 
-
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing:border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-	height:100%;
+    height: 100%;
 }
 
 section {
-	padding: 4vmax;
+    padding: 4vmax;
 }
 
 /* Home */
 
 #home {
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	padding:4vmax;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4vmax;
 }
 
 #home h1 {
-	font-family: 'Neucha', cursive;
-	font-size:4vmax;
-	text-transform:capitalize;
-	font-weight:normal;
-	display: block;
-	text-align: center;
+    font-family: 'Neucha', cursive;
+    font-size: 4vmax;
+    text-transform: capitalize;
+    font-weight: normal;
+    display: block;
+    text-align: center;
 }
 
 #home h2 {
-	text-align: center;
-	font-family: 'Neucha', cursive;
-	font-size:2vmax;
-	text-transform:capitalize;
-	font-weight:normal;
-	display: block;
-	padding-bottom: 1em;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    font-size: 2vmax;
+    text-transform: capitalize;
+    font-weight: normal;
+    display: block;
+    padding-bottom: 1em;
 }
 
 #home p {
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	padding:0 4em 1em 4em;
-	font-size:1.2vmax;
-	
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 0 4em 1em 4em;
+    font-size: 1.2vmax;
+
 }
 
 /*Map Start*/
 
-
-
+#start {
+    height: 100%;
+    background: #ADD8E6;
+    posiition: relative;
+}
 
 /***************************************************Quiz styles**************************************************************/
 
 /*Styling relative to javascript*/
 
 #results {
-  display:none;
+    display: none;
 }
 
 #quest_submit {
-  display: none;
+    display: none;
 }
 
 #quest_form:valid #quest_submit {
-  display: initial;
+    display: initial;
 }
 
 /*Display styling*/
 
 #quest_form {
-	padding-top:1vmax;
+    padding-top: 1vmax;
 }
 
 .question0 {
-  background-color: green;
+    background-color: green;
 }
 
 .question0 button {
-  display:none;
+    display: none;
 }
 
 .question1 {
-  background-color: blue;
+    background-color: blue;
 }
 
 .question2 {
-  background-color: red;
+    background-color: red;
 }
 
-#quest_title{
-  color: #333333;
-font-family: 'Open Sans', sans-serif;
-	display:block; 
-	width:100%;
+#quest_title {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    width: 100%;
 }
 
 #quest_answer {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	padding-bottom:1em;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-bottom: 1em;
 }
 
 /* Radio buttons styling */
 
 input[type="radio"] {
-  display: none;
-}
-input[type="radio"] + label {
-  border: 5px solid lightblue;
-  background-color: lightblue;
-  cursor: pointer;
-  display: block;
-  height: 40px;
-  width: 200px;
-  text-align: center;
-  line-height: 40px;
-}
-input[type="radio"]:checked + label {
-  border: 5px solid blue;
-  background-color: dodgerblue;
+    display: none;
 }
 
+#quest_answer label {
+    border: 5px solid lightblue;
+    background-color: lightblue;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+}
+
+input[type="radio"]:checked + label {
+    border: 5px solid blue;
+    background-color: dodgerblue;
+}
 
 /*Buttons styling*/
 
-#quest_prev, #quest_submit{
-	background:orange;
-	border:none;
-	border-radius: 10%;
-	font-family: 'Open Sans', sans-serif;
-	padding:0.3em;
-	text-transform:uppercase;
+#quest_prev, #quest_submit {
+    background: orange;
+    border: none;
+    border-radius: 10%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.3em;
+    text-transform: uppercase;
 }
 
-
 /****************************************************SVG line drawing test**************************************************/
-
-#start {
-					height: 100%;
-					background:#ADD8E6;
-					posiition:relative;
-				}
 
 /********************************************************Overlay menu******************************************************/
 
 #trigger {
-	font-size:20px;
-	cursor:pointer;
-	position:fixed;
-	top:20px;
-	right:20px;
-	z-index: 9;
-	color:#333333;
-	font-weight:700;
-	transition: all 2s;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    color: #333333;
+    font-weight: 700;
+    transition: all 2s;
 }
 
 #trigger:hover {
-	color:#BA402D;
+    color: #BA402D;
 }
 
 .overlay {
@@ -183,28 +179,28 @@ input[type="radio"]:checked + label {
 }
 
 .overlay-content {
-	position: relative;
+    position: relative;
     width: 100%;
-	height: 100%;
-	display: flex;
-	flex-flow: row wrap;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .overlay a {
-	position: relative;
+    position: relative;
     padding: 0px;
     text-decoration: none;
-	font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1vmax;
     color: #333333;
     transition: all 0.5s;
-	letter-spacing: 2px;
-	font-weight:700;
-	flex:1 auto;
-	display:flex;
-		justify-content: center;
-	align-items: center;
-	background:#ffffff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
 }
 
 .overlay a.one {
@@ -223,28 +219,28 @@ input[type="radio"]:checked + label {
 }
 
 .overlay a:hover, .overlay a:focus {
-    color:#fff;
-	background: #BA402D;
-	flex:2 auto;
+    color: #fff;
+    background: #BA402D;
+    flex: 2 auto;
 }
 
 .closebtn {
     position: absolute;
-	z-index: 99;	
+    z-index: 99;
     top: 20px;
     right: 20px;
     font-size: 30px !important;
-	line-height:0px;
-	cursor: pointer;
-	padding: 8px;
+    line-height: 0px;
+    cursor: pointer;
+    padding: 8px;
     text-decoration: none;
-	font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
     color: #333333;
     transition: all 0.3s;
-	text-transform:uppercase;
-	font-weight:normal;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 .closebtn:hover {
-	color: #ffffff;
+    color: #ffffff;
 }

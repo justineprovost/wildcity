@@ -7,7 +7,11 @@ function changeTitle(title) {
 }
 
 function appendAnswer(answer, index) {
-  document.getElementById ("quest_answer").insertAdjacentHTML('beforeend', '<input type="radio" name="answer" value="' + index + '" onclick="onAnswerChange(event)" required>' + answer + '<br>');
+  document.getElementById("quest_answer")
+    .insertAdjacentHTML(
+      'beforeend',
+      '<label><input type="radio" name="answer" value="' + index + '" onclick="onAnswerChange(event)" required />' + answer + '</label><br>',
+    );
 }
 
 function clearAnswers() {
